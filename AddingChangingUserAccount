@@ -1,0 +1,22 @@
+
+Setting up password:
+>net user <Username> *
+// will prompt you to set up password and confirm
+
+Renaming UserName
+> wmic useraccount where name='<OldUsername>' rename <NewUsername>
+
+
+ADDING USERACCOUNT/DELETING ACCOUNT
+>net user <username> <password> /ADD
+>net user <username> /DEL
+
+ADVANCE USERS OF NET USER COMMAND
+
+To set fullname while creating the user account
+>net user <username> <password> /ADD /FULLNAME:"User_Fullname"
+
+ALLOW you TO Change password:
+
+>net user <username> /ADD /PASSWORDCHG:Yes //if not allow will just change it to NO
+                                        10,1          Top
